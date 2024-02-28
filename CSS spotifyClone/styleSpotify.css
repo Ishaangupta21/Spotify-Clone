@@ -1,0 +1,333 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  background-color: black; 
+  color: white;
+  overflow:hidden;
+  margin :0.5rem;
+}
+
+.main{
+  display:flex;
+  height:100vh;
+}
+
+.sidebar{
+  width:330px;
+  border-radius:1rem;
+  background-color:black;
+  margin-right: 0.5rem;
+}
+.nav{
+  background-color: #121212;
+  height:100px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  padding:0.5rem 0.75rem;
+}
+
+.nav-options{
+  line-height: 2.5rem;
+  opacity:0.7;
+  transition: all 0.2s linear;
+  padding:0.4rem 0.6rem;
+}
+
+.nav-options:hover{
+  opacity:1;
+}
+
+
+.nav-options i{
+  font-size: 1.25rem;
+}
+
+.nav-options a{
+  text-decoration: none;
+  color: white;
+  margin-left: 1rem ;
+  font-size: 1rem;
+}
+
+.library{
+  background-color: #121212;
+  border-radius: 1rem;
+  padding :0.5rem 0.75rem;
+  height: 100%;
+  margin-top:0.5rem;
+}
+.lib-options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.lib img{
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.icons{
+  font-size: 1.25rem;
+  display: flex;
+}
+.icons i{
+  opacity: 0.7;
+  margin-right: 1rem;
+  transition: all 0.2s linear;
+}
+
+.icons i:hover{
+  opacity: 1;
+
+}
+
+.boxes{
+  background-color: #232323;
+  border-radius:0.5rem;
+  padding :0.4rem 0.6rem;
+  height: 9rem;
+  margin :0.75rem 0rem 1.75rem 0rem;
+}
+
+.box1{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.box2{
+  font-size: 0.8rem;
+  opacity:0.8;
+}
+
+
+
+.badge{
+  border:none;
+  background-color: white;
+  height:2rem;
+  border-radius:100px;
+  font-weight: 700;
+  padding: 0.25rem 1rem;
+  margin-top: 0.7rem;
+  font-size: 0.95rem;
+  width: fit-content;
+}
+
+.main_content{
+  flex:1;
+  border-radius:1rem;
+  background-color:#121212;
+  overflow:auto;
+  padding:0 1.5rem 0 1.5rem;
+}
+
+
+
+.sticky-navbar{
+  position: sticky;
+  top:0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem 0rem 1rem 0rem;
+  z-index: 10;
+}
+
+.sticky-nav-icons{
+   margin-left: 0.6rem;
+}
+
+.sticky-nav-opts{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left:0.3rem;
+}
+.nav-items{
+  margin-right: 1.2rem;
+}
+
+.dark-badge{
+  background-color: black;
+  color:white;
+
+}
+
+@media(max-width:1000px){
+  .hide{
+    display: none;
+  }
+}
+
+.card{
+  background-color: #232323;
+  width: 190px;
+  border-radius: 0.5rem;
+  padding:0.5rem;
+  transition: all 0.2s linear;
+  margin-left:2.5rem;
+  margin-bottom:2.5rem;
+
+}
+
+.card-title{
+  font-weight: 600;
+}
+.card-info{
+  font-size: 0.75rem;
+  opacity:0.7;
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-img{
+  width:100%;
+  border-radius: 0.5rem;
+}
+
+.card:hover{
+  background-color: #615e5e;
+  width:200px;
+}
+
+.footer{
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line{
+  width: 90%;
+  height:30%;
+  border-top:1px solid white;
+  opacity:0.4;
+
+
+}
+.music_player{
+  height:72px;
+  position:fixed;
+  width: 100%;
+  bottom:0;
+  background-color: black;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.music1{
+  width:25%;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.music2{
+  width:50%;
+}
+
+.music3{
+  width:25%;
+}
+.music1 img{
+  height:3rem;
+  width: 3rem;
+  margin-right:1.2rem; 
+  margin-left: 0.5rem;
+}
+
+.music-title{
+  line-height: 0.7rem;
+}
+
+.music-icon{
+  font-size: 1.25rem;
+}
+.music-icon i{
+  opacity: 0.8;
+  margin-left:0.9rem;
+
+}
+
+.music-title .artist{
+  font-weight: 300;
+  font-size: 0.8rem;
+  opacity:0.8;
+}
+
+.music-title .artist:hover{
+  text-decoration: underline;
+}
+
+.music3{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left:7rem;
+  padding-right:2rem;
+}
+
+.music3 i{
+  opacity:0.8;
+  font-size: 1rem;
+}
+
+.music3 i:hover{
+  opacity:1;
+}
+.music2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0.9rem;
+  padding-top:0.75rem;
+}
+.player-icon{
+  height:1.2rem;
+  margin-right:1.75rem;
+  opacity:0.7;
+}
+
+.player-icon:hover{
+  opacity:1;
+  scale: 1.2;
+}
+
+.prog-bar{
+  display: flex;
+  justify-content: center;
+  padding-bottom:0.35rem;
+  align-items: center;
+}
+
+.bar{
+  width:400px;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.range-appearance{
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.range-appearance::-webkit-slider-runnable-track{
+  background-color: #ddd;
+  border-radius: 100px;
+  height:0.2rem;
+}
+
+.range-appearance::-webkit-slider-thumb{
+ appearance: none;
+ height: 1rem;
+ width: 1rem;
+ border-radius: 50%;
+ background-color: #1bd760;
+ margin-top:-6px;
+}
